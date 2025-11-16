@@ -1,0 +1,614 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+
+
+
+
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+
+
+/* ---------------- HERO ---------------- */
+.hero-section {
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 50%;
+  color: white;
+}
+
+.hero-date {
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hero-desc {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  background: #fff;
+  padding: 12px 22px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ---------------- CONTINENT TABS ---------------- */
+.continent-tabs {
+  display: flex;
+  gap: 20px;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.continent-tabs button {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.continent-tabs .active {
+  border-bottom: 3px solid orange;
+  padding-bottom: 5px;
+}
+
+
+
+
+
+.news-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a3d;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.news-header h1 {
+  margin: 0;
+}
+
+.news-header nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.news-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-info {
+  padding: 15px;
+}
+
+.news-info h2 {
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+}
+
+.news-info p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.news-info a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.loader {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+/* ---------------- NAVBAR ---------------- */
+.top-navbar {
+  background: #0b1a4a;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-navbar nav a {
+  margin-left: 25px;
+  color: #c9d2ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.top-navbar nav a:hover {
+  color: white;
+}
+
+/* ---------------- HERO ---------------- */
+.hero-section {
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 50%;
+  color: white;
+}
+
+.hero-date {
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hero-desc {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  background: #fff;
+  padding: 12px 22px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ---------------- CONTINENT TABS ---------------- */
+.continent-tabs {
+  display: flex;
+  gap: 20px;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.continent-tabs button {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.continent-tabs .active {
+  border-bottom: 3px solid orange;
+  padding-bottom: 5px;
+}
+
+/* ---------------- NEWS GRID ---------------- */
+.news-main {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-info h3 {
+  margin: 10px 0;
+}
+
+.news-info a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0b1a4a;
+  font-weight: bold;
+}
+
+/* ---------------- LOADER ---------------- */
+.loader {
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+
+.loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  animation: infinite-spin 1s infinite;
+  border: 4px solid rgba(0, 255, 136, 0.2);
+  border-top-color: #00ff88;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes infinite-spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+
+
+
+
+/* ---------------- RESPONSIVE BREAKPOINTS ---------------- */
+
+/* TABLETTE */
+@media (max-width: 900px) {
+  .hero-content {
+    width: 70%;
+    left: 20px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+  }
+
+  .top-navbar {
+    padding: 15px 20px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero-section {
+    height: 380px;
+  }
+
+  .hero-content {
+    bottom: 20px;
+    width: 90%;
+    left: 15px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+  }
+
+  .continent-tabs {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .top-navbar nav a {
+    margin-left: 10px;
+  }
+}
+
+
+
+
+
+
+
+/* GLOBAL */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.top-navbar {
+  background: #0b1a4a;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top-navbar nav a {
+  margin-left: 25px;
+  color: #c9d2ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.top-navbar nav a:hover {
+  color: white;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero-section {
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  width: 50%;
+  max-width: 600px;
+  color: white;
+}
+
+.hero-date {
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hero-desc {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  background: #fff;
+  padding: 12px 22px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ---------------- CONTINENT TABS ---------------- */
+.continent-tabs {
+  display: flex;
+  gap: 20px;
+  padding: 20px 40px;
+  overflow-x: auto;
+  border-bottom: 1px solid #eee;
+}
+
+.continent-tabs button {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.continent-tabs .active {
+  border-bottom: 3px solid orange;
+  padding-bottom: 5px;
+}
+
+/* ---------------- NEWS GRID ---------------- */
+.news-main {
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.news-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-info {
+  padding: 15px;
+}
+
+.news-info h3 {
+  margin: 10px 0;
+}
+
+.news-info p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.news-info a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0b1a4a;
+  font-weight: bold;
+}
+
+/* ---------------- LOADING SPINNER ---------------- */
+.loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  animation: infinite-spin 1s linear infinite;
+  border: 4px solid rgba(0, 255, 136, 0.2);
+  border-top-color: #00ff88;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes infinite-spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* ---------------- RESPONSIVE BREAKPOINTS ---------------- */
+
+/* TABLETTE */
+@media (max-width: 900px) {
+  .hero-content {
+    width: 70%;
+    left: 20px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+  }
+
+  .top-navbar {
+    padding: 15px 20px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero-section {
+    height: 380px;
+  }
+
+  .hero-content {
+    bottom: 20px;
+    width: 90%;
+    left: 15px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+  }
+
+  .continent-tabs {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .top-navbar nav a {
+    margin-left: 10px;
+  }
+}
+
