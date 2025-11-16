@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
-import "../src/pages/home/NewsFeed.css";
+import "./pages/home/NewsFeed.css";
 
 const API_KEY = "80f641652f1841c98c26601754259ead";
 
