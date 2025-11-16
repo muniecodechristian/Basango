@@ -74,40 +74,7 @@ export default function Home() {
   return (
     <div className="news-container">
       {/* ------------------ HEADER / NAVBAR ------------------ */}
-      <div>
-
-      </div>
      
-     
-
-      {/* ------------------ HERO ------------------ */}
-      {articlePrincipal && (
-        <section
-          className="hero-section"
-          style={{ backgroundImage: `url(${articlePrincipal.urlToImage})` }}
-        >
-          <div className="hero-overlay"></div>
-
-          <div className="hero-content">
-            <p className="hero-date">
-              {new Date(articlePrincipal.publishedAt).toLocaleDateString("fr-FR")}
-            </p>
-
-            <h2 className="hero-title">{articlePrincipal.title}</h2>
-            <p className="hero-desc">{articlePrincipal.description}</p>
-
-            <a
-              href={articlePrincipal.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hero-button"
-            >
-              Lire plus
-            </a>
-          </div>
-        </section>
-      )}
-
       {/* ------------------ BARRE DES FILTRES ------------------ */}
       <div className="continent-tabs">
         <button
@@ -153,6 +120,37 @@ export default function Home() {
         </button>
 
       </div>
+     
+     
+
+      {/* ------------------ HERO ------------------ */}
+      {articlePrincipal && (
+        <section
+          className="hero-section"
+          style={{ backgroundImage: `url(${articlePrincipal.urlToImage})` }}
+        >
+          <div className="hero-overlay"></div>
+
+          <div className="hero-content">
+            <p className="hero-date">
+              {new Date(articlePrincipal.publishedAt).toLocaleDateString("fr-FR")}
+            </p>
+
+            <h2 className="hero-title">{articlePrincipal.title}</h2>
+            <p className="hero-desc">{articlePrincipal.description}</p>
+
+            <a
+              href={articlePrincipal.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-button"
+            >
+              Lire plus
+            </a>
+          </div>
+        </section>
+      )}
+
 
       {/* ------------------ GRILLE NEWS ------------------ */}
       <main className="news-main">
