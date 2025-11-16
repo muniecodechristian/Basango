@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import "./pages/home/NewsFeed.css";
 
-const API_KEY = "80f641652f1841c98c26601754259ead";
+const API_KEY = "3e3db645d3964cd0b1af7868a0755550";
 
 const BASE_URL = `https://newsapi.org/v2/everything?sortBy=publishedAt&language=fr&apiKey=${API_KEY}`;
 
